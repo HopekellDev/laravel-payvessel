@@ -1,0 +1,31 @@
+{
+    "name": "hopekelldev/laravel-payvessel",
+    "description": "A Laravel package for interacting with Payvessel API",
+    "keywords": ["laravel", "payvessel", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ezenwa Hopekell",
+            "email": "your-email@example.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HopekellDev\\Payvessel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HopekellDev\\Payvessel\\PayvesselServiceProvider"
+            ],
+            "aliases": {
+                "Payvessel": "HopekellDev\\Payvessel\\Facades\\Payvessel"
+            }
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    }
+}

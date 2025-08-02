@@ -19,6 +19,6 @@ class PayvesselServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/payvessel.php' => config_path('payvessel.php'),
-        ], 'payvessel-config');
+        ], 'config');
     }
 }
